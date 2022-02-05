@@ -7,13 +7,15 @@
   &:hover {
     text-decoration: none;
     background-color: #ffd891;
+    box-shadow: 1px 1px 4px 5px #ffc966;
   }
   &_invisible {
-    background-color: #bee4f9;
+    background-color: #bde3f8;
     box-shadow: none;
     padding: 12px 0 12px 10px;
     &:hover {
-      background-color: #bee4f9;
+      background-color: #bde3f8;
+      box-shadow: none;
     }
   }
 }
