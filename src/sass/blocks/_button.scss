@@ -1,0 +1,19 @@
+.btn {
+  padding: 12px 25px;
+  background-color: $main-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  transition: 0.5s all;
+  &:hover {
+    text-decoration: none;
+    background-color: #ffd891;
+  }
+  &_invisible {
+    background-color: #bee4f9;
+    box-shadow: none;
+    padding: 12px 0 12px 10px;
+    &:hover {
+      background-color: #bee4f9;
+    }
+  }
+}
