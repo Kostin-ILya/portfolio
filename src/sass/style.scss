@@ -22,6 +22,12 @@ h6 {
   max-width: 1140px;
   margin: 0 auto;
 }
+.divider {
+  margin-top: 25px;
+  width: 60px;
+  height: 3px;
+  background-color: $main-color;
+}
 
 @import "blocks/promo";
 @import "blocks/title";
