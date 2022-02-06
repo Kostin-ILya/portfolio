@@ -4,7 +4,7 @@
   padding-top: 205px;
   &__subtitle {
     position: relative;
-    z-index: 100;
+    z-index: 2;
     padding-left: 10px;
     @include before_cicle;
   }
