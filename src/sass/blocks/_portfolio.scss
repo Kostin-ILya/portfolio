@@ -1,0 +1,30 @@
+.portfolio {
+  padding-top: 126px;
+  &__wrapper {
+    padding-top: 60px;
+    display: grid;
+    grid-template: repeat(2, 280px) / repeat(4, 1fr);
+    grid-auto-rows: 280px;
+    gap: 5px;
+    .vertical {
+      grid-row: 1 / 3;
+      grid-column: 4;
+    }
+    .horizontal {
+      grid-row: 2 / 3;
+      grid-column: 2 / 4;
+    }
+  }
+  &__item {
+    border-radius: 50%;
+    :hover {
+      transition: 0.5s all;
+      transform: scale(1.05);
+      filter: saturate(1.5);
+    }
+    img {
+      max-width: 100%;
+      border-radius: 6px;
+    }
+  }
+}
