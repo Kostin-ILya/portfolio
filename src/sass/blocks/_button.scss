@@ -7,7 +7,7 @@
   &:hover {
     text-decoration: none;
     background-color: #ffd891;
-    transform: scale(1.05);
+    transform: scale(1.03);
   }
   &_invisible {
     background-color: #bde3f8;
@@ -16,6 +16,19 @@
     &:hover {
       background-color: #bde3f8;
       box-shadow: none;
+    }
+  }
+  &__triggers {
+    grid-column: 1 / 3;
+    display: grid;
+    grid-template-columns: 220px auto;
+  }
+  &__policy {
+    display: flex;
+    span {
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 18px;
     }
   }
 }

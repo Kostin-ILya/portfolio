@@ -3,8 +3,10 @@
 @import "base/variables";
 @import "base/mixins";
 
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap");
+
 * {
-  font-family: "Poppins", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-weight: 700;
   margin: 0;
   padding: 0;
@@ -39,3 +41,4 @@ h6 {
 @import "blocks/skills";
 @import "blocks/portfolio";
 @import "blocks/price";
+@import "blocks/contacts";

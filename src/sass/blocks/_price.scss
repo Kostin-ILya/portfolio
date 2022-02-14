@@ -12,10 +12,9 @@
   &__item {
     display: grid;
     padding-left: 25px;
-    grid-template-rows: minmax(21px, auto) 18px;
-    grid-template-columns: minmax(55px, auto) minmax(90px, auto);
+    grid-template-rows: minmax(21px, auto) minmax(18px, auto);
+    grid-template-columns: repeat(2, auto);
     row-gap: 5px;
-    justify-content: space-between;
     &-title {
       position: relative;
       &::before {
