@@ -95,6 +95,11 @@
     width: 100%;
     padding: 0 10px;
   }
+  .title {
+    &_fz36 {
+      font-size: 24px;
+    }
+  }
   .hamburger {
     right: 20px;
   }
@@ -118,6 +123,23 @@
   .btn {
     &_invisible {
       background-color: unset;
+    }
+  }
+  .about {
+    &__wrapper {
+      grid-template-rows: 340px auto auto;
+    }
+    &__descr {
+      margin-top: 20px;
+    }
+    &__skills {
+      grid-template-columns: 260px;
+      grid-template-rows: repeat(2, minmax(116px, auto));
+      grid-auto-rows: minmax(116px, auto);
+    }
+    &__skill {
+      grid-template-columns: 40px 196px;
+      column-gap: 24px;
     }
   }
 }
