@@ -39,6 +39,7 @@
     display: grid;
     grid-template-rows: repeat(2, minmax(70px, auto));
     grid-template-columns: repeat(3, 350px);
+    grid-auto-rows: minmax(70px, auto);
     gap: 30px 45px;
     &-item {
       display: grid;
