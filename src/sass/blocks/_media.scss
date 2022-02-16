@@ -108,6 +108,13 @@
       grid-template-columns: repeat(2, 1fr);
     }
   }
+  .price {
+    &__wrapper {
+      grid-template-columns: repeat(auto-fit, 350px);
+      padding: 0;
+      justify-content: space-between;
+    }
+  }
 }
 @media (max-width: 767.98px) {
   .container {
@@ -164,6 +171,13 @@
       grid-template: repeat(2, 250px) / repeat(2, 250px);
       grid-auto-rows: 250px;
       gap: 25px;
+    }
+  }
+  .price {
+    &__wrapper {
+      margin-top: 20px;
+      justify-content: center;
+      row-gap: 25px;
     }
   }
 }
@@ -254,6 +268,16 @@
       margin-top: 40px;
       grid-template: 280px / 280px;
       grid-auto-rows: 280px;
+      gap: 20px;
+    }
+  }
+  .price {
+    padding-top: 40px;
+    .divider {
+      margin-top: 20px;
+    }
+    &__wrapper {
+      grid-template-columns: 300px;
       gap: 20px;
     }
   }
