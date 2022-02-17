@@ -322,6 +322,28 @@
     }
   }
   .contacts {
+    &__title,
+    &__subtitle,
+    &__text {
+      text-align: center;
+    }
+    &__title {
+      &::before {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      padding: 0;
+    }
+    .divider {
+      margin: 0 auto;
+    }
+    &__social {
+      display: flex;
+      justify-content: center;
+    }
+    &__link {
+      margin: 0 10px;
+    }
     &__form {
       grid-template-columns: 1fr;
       grid-template-rows: 45px 45px 145px;
@@ -337,7 +359,7 @@
       // text-align: center;
     }
     &__policy {
-      width: 180px;
+      width: 190px;
       margin: 0 auto;
       order: 1;
       justify-content: center;
@@ -346,5 +368,9 @@
       padding: 12px 26px;
       order: 2;
     }
+  }
+  #checkbox {
+    width: 40px;
+    height: 40px;
   }
 }

@@ -256,7 +256,8 @@
 			<div class="title_fz36 title__section-subtitle">Что я использую в работе</div>
 			<div class="divider"></div>
 
-			<div class="skills__items">
+			<div class="skills__items wow animate__animated animate__fadeIn animate__slow" data-wow-duration="1.5s"
+				data-wow-delay="0.5s">
 				<div class="skills__item">
 					<div class="skills__item-img">
 						<img src="icons/skills/html5.svg" alt="html5">
@@ -382,10 +383,10 @@
 			<div class="title_fz36 title__section-subtitle">Мои работы</div>
 			<div class="divider"></div>
 			<div class="portfolio__wrapper">
-				<a href="uber/" class="portfolio__item" target="_blank">
+				<a href="uber/index.html" class="portfolio__item" target="_blank">
 					<img src="img/works/uber.jpg" alt="uber">
 				</a>
-				<a href="pulse/" class="portfolio__item" target="_blank">
+				<a href="pulse/index.html" class="portfolio__item" target="_blank">
 					<img src="img/works/pulse.jpg" alt="pulse">
 				</a>
 				<a href="#" class="portfolio__item">
@@ -409,7 +410,7 @@
 			<h2 class="title_fz16 title__section-title">Прайс-лист</h2>
 			<div class="divider"></div>
 
-			<div class="price__wrapper">
+			<div class="price__wrapper animate__animated animate__pulse wow " data-wow-duration="1.5s" data-wow-delay="0.5s">
 				<div class="price__item">
 					<div class="price__item-title title_fz14">Landing-page</div>
 					<div class="price__item-count">от 8000 руб.</div>
@@ -479,23 +480,24 @@
 					</div>
 					<div class="contacts__text title_fz14">Или оставьте ваши данные и я сама вам напишу:</div>
 
-					<form action="#" class="contacts__form">
+					<form id="appeal-form" action="#" class="contacts__form">
 						<div class="contacts__input">
 							<input required id="name" name="name" type="text">
-							<label for="name">Ваше имя</label>
+							<label class="contacts__label" for="name">Ваше имя</label>
 						</div>
 						<div class="contacts__input">
 							<input required id="email" name="email" type="email">
-							<label for="email">Ваша почта</label>
+							<label class="contacts__label" for="email">Ваша почта</label>
 						</div>
 						<div class="contacts__textarea">
 							<textarea name="text" id="text"></textarea>
-							<label for="text">Ваше сообщение</label>
+							<label class="contacts__label" for="text">Ваше сообщение</label>
 						</div>
 						<div class="contacts__triggers">
-							<button class="contacts__btn btn">Отправить сообщение</button>
+							<button data-modal="appeal" class="contacts__btn btn">Отправить сообщение</button>
 							<div class="contacts__policy">
-								<input required type="checkbox" name="checkbox" id="checkbox">
+
+								<input type="checkbox" name="terms" value="1" id="terms">
 								<span>Я согласен(а) с <a href="#">политикой конфиденциальности</a></span>
 							</div>
 						</div>
@@ -505,6 +507,20 @@
 		</div>
 	</section>
 
+	<div class="overlay">
+		<div class="modal" id="thanks">
+			<div class="modal__close">&times;</div>
+			<div class="modal__subtitle">Спасибо за ваше обращение!</div>
+			<div class="modal__descr">Я свяжусь с вами в ближайшее время!
+			</div>
+		</div>
+	</div>
+
+
+	<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/jquery.validate.min.js"></script>
 	<script src="js/script.js"></script>
 </body>
 

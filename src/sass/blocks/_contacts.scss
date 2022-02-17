@@ -20,7 +20,7 @@
   }
   &__title {
     position: relative;
-    z-index: 2;
+    // z-index: 2;
     padding-left: 12px;
     @include before_circle;
   }
@@ -52,15 +52,15 @@
     grid-template: 45px 190px 45px / repeat(2, 280px);
     justify-content: space-between;
     row-gap: 32px;
-    label {
-      padding: 0 8px 0 8px;
-      position: absolute;
-      top: -9px;
-      left: 12px;
-      background-color: #fff;
-      font-weight: 500;
-      font-size: 12px;
-    }
+  }
+  &__label {
+    padding: 0 8px 0 8px;
+    position: absolute;
+    top: -9px;
+    left: 12px;
+    background-color: #fff;
+    font-weight: 500;
+    font-size: 12px;
   }
   &__input {
     position: relative;
@@ -104,5 +104,14 @@
       font-size: 12px;
       line-height: 18px;
     }
+  }
+  .error {
+    border: 1px solid red;
+    margin-bottom: 15px;
+  }
+  label.error {
+    border: none;
+    font-weight: 700;
+    text-align: center;
   }
 }
